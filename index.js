@@ -8,12 +8,6 @@ const discountContainer = document.getElementById("discount");
 applyBtn.disabled = true;
 purchaseBtn.disabled = true;
 let totalPrice = 0;
-
-if (totalPrice > 0) {
-  applyBtn.disabled = false;
- applyBtn.classList.add("bg-gray-400");
-  applyBtn.classList.remove("bg-pink-500");
-}
 const handClick = (data) => {
  
     const name = data.childNodes[1].childNodes[5].innerText;
